@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "TShirt";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Nội dung
+        </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Sản Phẩm Áo Thun</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Chọn</th>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên</th>
+                                    <th>Loại</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Nhà cung cấp</th>
+                                    <th>KM</th>
+                                    <th>Ảnh</th>
+                                    <th>Thời gian đăng</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Trident</td>
+                                    <td>
+                                        Internet
+                                        Explorer 4.0
+                                    </td>
+                                    <td>Win 95+</td>
+                                    <td> 4</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Trident</td>
+                                    <td>
+                                        Internet
+                                        Explorer 5.0
+                                    </td>
+                                    <td>Win 95+</td>
+                                    <td>5</td>
+                                    <td>C</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>Trident</td>
+                                    <td>
+                                        Internet
+                                        Explorer 5.5
+                                    </td>
+                                    <td>Win 95+</td>
+                                    <td>5.5</td>
+                                    <td>A</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                    <td>X</td>
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+
+            <!--Content of Products-->
+            <div class="col-xs-12">
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Nội dung sản phẩm</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="form-group" style="width:30%">
+                            <label>Tên</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                        <div class="form-group" style="width:30%">
+                            <label>Giớ tính</label>
+                            <select class="form-control">
+                                <option>Nam</option>
+                                <option>Nữ</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="width:20%">
+                            <label>Số lượng</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                        <div class="form-group" style="width:30%">
+                            <label>Giá</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                        <div class="form-group" style="width:30%">
+                            <label>Nhà cung cấp</label>
+                            <input type="text" class="form-control" placeholder="Enter ...">
+                        </div>
+                        <div class="form-group" style="width:30%">
+                            <label>Khuyến mãi</label>
+                            <select class="form-control">
+                                <option>10%</option>
+                                <option>15%</option>
+                                <option>20%</option>
+                                <option>25%</option>
+                                <option>30%</option>
+                                <option>35%</option>
+                                <option>40%</option>
+                                <option>45%</option>
+                                <option>50%</option>
+                                <option>55%</option>
+                                <option>60%</option>
+                                <option>65%</option>
+                                <option>70%</option>
+                                <option>75%</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="compose-textarea" class="form-control" style="height: 300px"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="btn btn-default btn-file">
+                                <i class="fa fa-paperclip"></i> link ảnh
+                                <input type="file" name="attachment">
+                            </div>
+                            <p class="help-block">Max. 32MB</p>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Sửa</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-envelope-o"></i>Thêm</button>
+                        </div>
+                        <button type="reset" class="btn btn-default"><i class="fa fa-times"></i> Xóa</button>
+                    </div>
+                    <!-- /.box-footer -->
+                </div>
+                <!-- /. box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+
+</div>
+
+

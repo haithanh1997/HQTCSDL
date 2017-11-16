@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Test1.EF.khuyenmai>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Nội dung
+        </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <div class="box-header">
+                        <h3 class="box-title">Quản lý chương trình khuyến mãi</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <p>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.makhuyenmai)</th>
+                                    <th>@Html.DisplayNameFor(model => model.thoigianbatdau)</th>
+                                    <th>@Html.DisplayNameFor(model => model.thoigianketthuc)</th>
+                                    <th>@Html.DisplayNameFor(model => model.noidung)</th>
+                                    <th>@Html.DisplayNameFor(model => model.chitiet)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.makhuyenmai)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.thoigianbatdau)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.thoigianketthuc)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.noidung)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.chitiet)
+                                        </td>
+                                        <td>
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.makhuyenmai }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.makhuyenmai })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+</div>
